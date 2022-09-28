@@ -11,6 +11,9 @@ declare function SwaggerExpressValidator(options: SwaggerExpressValidator.Option
 declare namespace SwaggerExpressValidator {
     interface Options {
         schema: any;
+        preserveResponseContentType?: boolean | undefined;
+        returnRequestErrors?: boolean | undefined;
+        returnResponseErrors?: boolean | undefined; 
         validateRequest?: boolean | undefined;
         validateResponse?: boolean | undefined;
         allowNullable?: boolean | undefined;
